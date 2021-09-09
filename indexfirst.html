@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<style>
+  h1 {
+  border: 1px solid black;
+  background-color: white;
+  padding-top: 50px;
+  padding-right: 500px;
+  padding-bottom: 50px;
+  padding-left: 500px;
+}
+  .center{
+        border: none;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;
+  }
+  button{
+    background-color: orangered;  
+   color: black;  
+   font-size: 25px;  
+   margin: auto;
+    }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  justify-content:space-around;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 20px;
+}
+
+
+.column {
+  -ms-flex: 25%; 
+  flex: 25%;
+    width:auto;
+
+  padding: 0px 35px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+<div class="row"> 
+    <img src="image1.jpg" height="400" style="width: 100%;">
+    <p>TEXT TEXT TEXT</p>
+    </div>
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <img src="image1.jpg" height="100">
+      <img src="imagen1.jpg" height="200">
+      <img src="image2.jpg" height="100">
+      <img src="image1.jpg" height="200">
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="image2.jpg" height="200">
+      <img src="imagen2.jpg" height="100">
+      <img src="image2.jpg" height="200">
+      <img src="imagen.jpg" height="100">
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" >
+      <img src="imagen.jpg" height="100">
+      <img src="image1.jpg" height="100">
+      <img src="image2.jpg" height="100">
+      <img src="imagen1.jpg" height="100">
+      <img src="imagen.jpg" height="100">
+      <img src="imagen2.jpg" height="100">
+    </div>
+  </div>
+</div>
+<div class="center">
+  <button>Contact Us</button>
+</div>
+<div class="container">
+    <h1>FORMAT </h1>
+    </div>
+
+
+
+</body>
+</html>

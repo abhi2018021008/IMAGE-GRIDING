@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .center{
+        border: none;  
+display: flex;  
+justify-content: center;  
+align-items: center;
+    }
+    button{
+    background-color: orangered;  
+color: black;  
+font-size: 25px;  
+margin: auto;
+    }
+    h1 {
+  border: 1px solid black;
+  background-color: white;
+  padding-top: 50px;
+  padding-right: 500px;
+  padding-bottom: 50px;
+  padding-left: 500px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  justify-content:space-around;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 20px;
+}
+
+
+.column {
+  -ms-flex: 25%; 
+  flex: 25%;
+    width:auto;
+
+  padding: 0px 35px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Photo Grid -->
+<div class="row"> 
+    <img src="image1.jpg" width="1000" height="300">
+    </div>
+    <p style="text-align:center"><b>                        EXTRAAAA                                       </b></p>
+    <div class="row">
+       <img src="image2.jpg" width="1000" height="300">
+    </div>
+    <p>TEXT TEXT TEXTTEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+  <div class="container"> 
+  <div class="column">
+
+    <img src="image3.jpg" width="500" height="200">
+  </div>
+  <div class="column">
+    <img src="image3.jpg" width="500" height="200">
+  </div>  
+</div>
+</div> 
+<p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXTTEXT TEXT TEXT</p>
+<p>TEXT EXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT T EXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT T</p>
+<div class="center">
+    <button>Contact Us</button>
+  </div>
+<div class="container">
+    <h1>FORMAT </h1>
+    </div>
+
+
+
+  
+</body>
+</html>
